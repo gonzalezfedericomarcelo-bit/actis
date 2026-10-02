@@ -1,0 +1,28 @@
+{
+  "name": "actis-totem",
+  "version": "1.0.0",
+  "description": "Ejecutable Kiosco para Policlínica ACTIS",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --x64"
+  },
+  "author": "Federico Gonzalez",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.3.1",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.federicogonzalez.actistotem",
+    "productName": "Totem ACTIS",
+    "win": {
+      "target": "portable"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}

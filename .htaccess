@@ -1,0 +1,3 @@
+php_value session.name SESS_ACTIS
+php_value session.cookie_lifetime 7776000
+php_value session.gc_maxlifetime 7776000

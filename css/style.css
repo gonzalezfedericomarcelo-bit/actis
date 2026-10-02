@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root {
+    --color-primario: #2563eb; 
+    --color-primario-hover: #1d4ed8;
+    --color-fondo: #f8fafc;
+    --color-texto: #1e293b;
+    --color-borde: rgba(255, 255, 255, 0.3);
+    --color-exito: #10b981;
+    --color-peligro: #ef4444;
+    --fuente-principal: 'Poppins', sans-serif;
+    --sidebar-width: 280px;
+    --transition: all 0.2s ease-out;
+}
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--fuente-principal); background: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop') no-repeat center center fixed; background-size: cover; color: var(--color-texto); display: flex; min-height: 100vh; overflow-x: hidden; }
+body::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(241, 245, 249, 0.94); z-index: -1; }
+.glass-panel { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); border: 1px solid rgba(255, 255, 255, 0.6); box-shadow: 0 4px 15px 0 rgba(31, 38, 135, 0.05); }
+.sidebar { width: var(--sidebar-width); height: 100vh; position: fixed; left: 0; top: 0; display: flex; flex-direction: column; z-index: 1000; transition: var(--transition); background: rgba(15, 23, 42, 0.96); backdrop-filter: blur(4px); border-right: 1px solid rgba(255,255,255,0.1); color: white; }
+.sidebar-header { padding: 30px 20px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.sidebar-header h1 { font-size: 1.5rem; font-weight: 700; color: white; letter-spacing: 1px; }
+.sidebar-header h1 span { color: #60a5fa; }
+.nav-menu { flex: 1; padding: 20px 15px; overflow-y: auto; }
+.nav-item { display: flex; align-items: center; padding: 15px 20px; color: #cbd5e1; text-decoration: none; border-radius: 12px; margin-bottom: 10px; transition: var(--transition); font-weight: 500; font-size: 1.05rem; }
+.nav-item:hover { background: rgba(255,255,255,0.1); color: white; transform: translateX(5px); }
+.nav-item i { margin-right: 15px; font-size: 1.3rem; width: 25px; text-align: center; }
+.topbar-mobile { display: none; width: 100%; height: 70px; background: rgba(15, 23, 42, 0.98); color: white; align-items: center; padding: 0 25px; position: fixed; top: 0; z-index: 999; justify-content: space-between; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.hamburger-btn { background: none; border: none; color: white; font-size: 1.8rem; cursor: pointer; }
+.btn-cerrar-menu { display: none; background: none; border: none; color: white; font-size: 1.8rem; cursor: pointer; position: absolute; right: 20px; top: 25px; }
+.main-content { flex: 1; margin-left: var(--sidebar-width); padding: 40px; transition: var(--transition); min-height: 100vh; width: calc(100% - var(--sidebar-width)); }
+.tarjeta { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.8); border-radius: 20px; padding: 35px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 30px; transition: var(--transition); }
+.tarjeta:hover { box-shadow: 0 15px 35px rgba(0,0,0,0.1); transform: translateY(-5px); }
+.grid-dashboard { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 15px 30px; border-radius: 12px; font-weight: 600; cursor: pointer; transition: var(--transition); border: none; gap: 10px; font-size: 1.05rem; text-decoration: none; min-height: 55px; position: relative; overflow: hidden; font-family: var(--fuente-principal); }
+.btn-primario { background: var(--color-primario); color: white; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3); }
+.btn-primario:hover { background: var(--color-primario-hover); box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4); transform: scale(1.02); }
+.btn-exito { background: var(--color-exito); color: white; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3); }
+.btn-exito:hover { background: #059669; box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4); transform: scale(1.02); }
+.form-floating { position: relative; margin-bottom: 25px; }
+.form-floating input, .form-floating select { width: 100%; padding: 22px 20px 10px 20px; border: 2px solid rgba(255,255,255,0.5); border-radius: 12px; font-family: inherit; font-size: 1.05rem; transition: var(--transition); background: rgba(255,255,255,0.7); min-height: 60px; color: var(--color-texto); font-weight: 500; }
+.form-floating label { position: absolute; top: 18px; left: 20px; color: #64748b; font-size: 1.05rem; transition: var(--transition); pointer-events: none; background: transparent; padding: 0 5px; border-radius: 5px; }
+.form-floating input:focus, .form-floating input:not(:placeholder-shown), .form-floating select:focus, .form-floating select:not([value=""]) { border-color: var(--color-primario); outline: none; background: white; box-shadow: 0 0 0 4px rgba(37,99,235,0.1); }
+.form-floating input:focus ~ label, .form-floating input:not(:placeholder-shown) ~ label, .form-floating select:focus ~ label, .form-floating select:not([value=""]) ~ label { top: -12px; left: 15px; font-size: 0.85rem; color: var(--color-primario); font-weight: 700; background: white; }
+.drop-zone { width: 100%; height: 180px; padding: 25px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-weight: 500; font-size: 1.2rem; cursor: pointer; color: var(--color-primario); border: 3px dashed rgba(37,99,235,0.4); border-radius: 15px; transition: var(--transition); background: rgba(255,255,255,0.5); }
+.drop-zone:hover { background: rgba(255,255,255,0.9); border-color: var(--color-primario); transform: scale(1.01); }
+.drop-zone i { font-size: 3.5rem; margin-bottom: 15px; color: var(--color-primario); }
+.table-responsive { width: 100%; overflow-x: auto; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+table { width: 100%; border-collapse: collapse; background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); }
+th { background: rgba(37,99,235,0.1); padding: 18px; text-align: left; font-weight: 600; color: var(--color-primario); }
+td { padding: 18px; border-bottom: 1px solid rgba(0,0,0,0.05); font-weight: 500; }
+tr:hover { background: rgba(255,255,255,1); }
+.loader-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.9); backdrop-filter: blur(10px); display: none; justify-content: center; align-items: center; z-index: 9999; flex-direction: column; }
+.loader-spinner { border: 5px solid #e2e8f0; border-top: 5px solid var(--color-primario); border-radius: 50%; width: 70px; height: 70px; animation: spin 1s linear infinite; margin-bottom: 25px; }
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+.ripple-efecto { position: absolute; border-radius: 50%; transform: scale(0); animation: ripple-anim 600ms linear; background-color: rgba(255, 255, 255, 0.4); }
+@keyframes ripple-anim { to { transform: scale(4); opacity: 0; } }
+@media (max-width: 992px) { .sidebar { transform: translateX(-100%); width: 300px; } .sidebar.active { transform: translateX(0); box-shadow: 20px 0 50px rgba(0,0,0,0.5); } .btn-cerrar-menu { display: block; } .topbar-mobile { display: flex; } .main-content { margin-left: 0; padding: 100px 20px 40px 20px; width: 100%; } .table-responsive table, .table-responsive thead, .table-responsive tbody, .table-responsive th, .table-responsive td, .table-responsive tr { display: block; } .table-responsive thead tr { position: absolute; top: -9999px; left: -9999px; } .table-responsive tr { border-radius: 15px; margin-bottom: 20px; padding: 20px; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.05); } .table-responsive td { border: none; border-bottom: 1px solid #f1f5f9; position: relative; padding-left: 50%; text-align: right; min-height: 50px; display: flex; justify-content: flex-end; align-items: center; } .table-responsive td:last-child { border-bottom: 0; } .table-responsive td:before { position: absolute; top: auto; left: 20px; width: 45%; white-space: nowrap; font-weight: 700; text-align: left; content: attr(data-label); color: var(--color-primario); } }

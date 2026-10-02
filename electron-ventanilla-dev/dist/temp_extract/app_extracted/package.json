@@ -1,0 +1,8 @@
+{
+  "name": "actis-totem",
+  "version": "1.0.0",
+  "description": "Ejecutable Kiosco para Policlínica ACTIS",
+  "main": "main.js",
+  "author": "Federico Gonzalez",
+  "license": "ISC"
+}

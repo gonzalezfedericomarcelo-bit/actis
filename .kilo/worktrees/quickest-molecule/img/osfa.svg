@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" rx="80" fill="#144973"/>
+  
+  <path d="M200 40 L320 80 L320 180 C320 280 200 360 200 360 C200 360 80 280 80 180 L80 80 Z" fill="none" stroke="#38bdf8" stroke-width="6" opacity="0.4"/>
+  
+  <text x="50%" y="34%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-weight="bold" font-size="50" letter-spacing="5">OSFA</text>
+  
+  <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-weight="bold" font-size="90" letter-spacing="2">ACTIS</text>
+  
+  <text x="83%" y="62%" dominant-baseline="middle" text-anchor="middle" fill="#38bdf8" font-family="Arial, sans-serif" font-weight="bold" font-size="20" letter-spacing="2">CORE</text>
+  
+  <path d="M200 250 L200 300 M175 275 L225 275" stroke="#10b981" stroke-width="14" stroke-linecap="round"/>
+</svg>

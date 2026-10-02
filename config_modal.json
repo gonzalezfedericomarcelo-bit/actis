@@ -1,0 +1,4 @@
+{
+    "activo": true,
+    "html": "<div style=\"font-size:60px; color:#10b981; margin-bottom:20px;\">\ud83c\udfc6<\/div>\r\n<h2 style=\"margin:0 0 10px 0; color:#0f172a; font-family:Arial; font-size:24px;\">\u00a1Buen trabajo, {{userName}}!<\/h2>\r\n<p style=\"color:#64748b; font-family:Arial; font-size:16px; margin:0 0 25px 0; line-height:1.5;\">El turno fue guardado en el sistema ACTIS correctamente.<br>Lo est\u00e1s haciendo muy bien.<\/p>\r\n<button id=\"btn_cerrar_modal_actis\" style=\"background:#3b82f6; color:white; border:none; padding:12px 30px; border-radius:10px; font-weight:bold; font-size:16px; cursor:pointer; box-shadow:0 4px 14px rgba(59,130,246,0.4);\">Continuar<\/button>"
+}

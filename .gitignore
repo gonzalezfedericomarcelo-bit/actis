@@ -1,0 +1,39 @@
+# Flutter/Dart
+**/build/
+**/.dart_tool/
+**/.pub-cache/
+**/.pub/
+**/build/
+**/app-profile.aab
+
+# Node
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Mac
+.DS_Store
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+
+# Archivos pesados y backups
+*.zip
+*.rar
+*.exe
+*.apk
+*.aab
+backup/
+capturas/
+logs/
+uploads/
+screenshot.png
+found_script.txt

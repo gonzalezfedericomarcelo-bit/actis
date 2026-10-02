@@ -1,0 +1,29 @@
+{
+  "name": "actis-totem",
+  "version": "1.0.3",
+  "description": "Kiosco de Autogestión ACTIS",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.actis.totem",
+    "productName": "ACTIS Totem",
+    "win": {
+      "target": "portable",
+      "icon": "icon.png"
+    }
+  },
+  "keywords": [],
+  "author": "Antigravity",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^43.4.1",
+    "electron-builder": "^26.15.3"
+  },
+  "dependencies": {
+    "7zip-bin": "^5.2.0",
+    "node-7z": "^3.0.0"
+  }
+}

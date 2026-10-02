@@ -1,0 +1,30 @@
+{
+  "name": "actis-ventanilla-dev",
+  "version": "1.0.0",
+  "description": "Ventanilla de Recepción ACTIS (DEV)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.actis.ventanilladev",
+    "productName": "ACTIS Ventanilla DEV",
+    "copyright": "Copyright © 2026 SG Mec Info Federico GONZÁLEZ",
+    "win": {
+      "target": "portable",
+      "icon": "icon.png"
+    }
+  },
+  "keywords": [],
+  "author": "ENC INFO -  ACTIS",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^43.4.1",
+    "electron-builder": "^26.15.3"
+  },
+  "dependencies": {
+    "7zip-bin": "^5.2.0",
+    "node-7z": "^3.0.0"
+  }
+}
