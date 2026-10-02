@@ -33,7 +33,6 @@ $texto_ticker = empty($ultimos_resueltos) ? "Sistema 100% Operativo. Sin novedad
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <?php include 'head.php'; ?>
     <title>Terminal Logística IoT</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.5.3/signature_pad.min.js"></script>
